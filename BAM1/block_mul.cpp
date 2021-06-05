@@ -127,7 +127,7 @@ int main(int argc, char **argv){
     printf("Starting Running\n");
     n_thread=1; 
     samFile *sin;
-    sam_hdr_t *hdr;
+    sam_hdr_t *hdr; 
     bam1_t *b;
     ofstream fout;
     fout.open(output_fq);
@@ -146,7 +146,7 @@ int main(int argc, char **argv){
     BamBlockConfig bamconfig(4000);
     BamBlock block(&bamconfig);
     thread **Bam = new thread *[n_thread+2];
-    Bam[0]=new thread(&read_pack,sin->fp.bgzf,&block);
+    Bam[0]=new thread(&read_pack,sin->fp.bgzf,&block); //读线程
     for (int i=1;i<=n_thread;i++)
         Bam[i]=new thread(&consumer_pack,&block,&buffer,i);
     Bam[n_thread+1]=new thread(&write_pack,&buffer);

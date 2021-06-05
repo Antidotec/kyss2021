@@ -190,33 +190,6 @@ const char *bgzf_zerr(int errnum, z_stream *zs)
         return buffer; // FIXME: Not thread-safe.
     }
 }
-//int bgzf_uncompress(uint8_t *dst, size_t *dlen,
-//                           const uint8_t *src, size_t slen,
-//                           uint32_t expected_crc) {
-////    printf("dst: %d   dlen: %d   src: %d   slen: %d   expected_crc: %d\n", dst[0], *dlen, src[0], slen, expected_crc);
-//
-//    struct libdeflate_decompressor *z = libdeflate_alloc_decompressor();
-//    if (!z) {
-//        hts_log_error("Call to libdeflate_alloc_decompressor failed");
-//        return -1;
-//    }
-//
-//    int ret = libdeflate_deflate_decompress(z, src, slen, dst, *dlen, dlen);
-//    libdeflate_free_decompressor(z);
-//
-//    if (ret != 0) {
-//        hts_log_error("Inflate operation failed: %d", ret);
-//        return -1;
-//    }
-//
-//    uint32_t crc = libdeflate_crc32(0, (unsigned char *) dst, *dlen);
-//    if (crc != expected_crc) {
-//        hts_log_error("CRC32 checksum mismatch");
-//        return -2;
-//    }
-//
-//    return 0;
-//}
 
 int bgzf_uncompress(uint8_t *dst, unsigned int *dlen, const uint8_t *src, unsigned int slen, uint32_t expected_crc)
 {
@@ -510,7 +483,7 @@ pair<bam_block *, int> BamBlock::getCompressdata()
 void BamBlock::backempty(int id)
 {
     mtx_read.lock();
-    read[read_ed] = id;//id重置？
+    read[read_ed] = id; 
     read_ed = (read_ed + 1) % config->write_number;
     mtx_read.unlock();
 }

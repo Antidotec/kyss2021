@@ -75,7 +75,7 @@ public:
     pair<bam_block *, int> getEmpty(); //提取一个空的内存块
     void inputblock(int id); // 导入未解压的数据
     pair<bam_block *, int> getCompressdata(); //提取一个填入了压缩数据的内存块
-    void backempty(int id); //归还一个已经解析完的内存块
+    void backempty(int id); //归还一个已经解析完的内存块，
     bool isComplete(); //是否读取结束了
     void ReadComplete(); //读取结束
 

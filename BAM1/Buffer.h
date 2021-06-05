@@ -34,7 +34,7 @@ public:
     ofstream *fout; //输出流
     mutex mtx;
     char **buffer; //输出所用的内存块
-    int *write; //待输出的内存块ids数组
+    int *write; //待输出的内存块id数组
     int *pos; //待输出的内存块的数据大小
     int write_bg; //
     int write_ed;
