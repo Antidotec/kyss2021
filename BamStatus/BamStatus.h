@@ -1,6 +1,4 @@
-//
-// Created by 赵展 on 2021/3/24.
-//
+
 
 #ifndef BAMSATUS_BAMSTATUS_H
 #define BAMSATUS_BAMSTATUS_H

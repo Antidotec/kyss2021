@@ -1,7 +1,4 @@
 
-//
-// Created by 赵展 on 2021/4/12.
-//
 
 #ifndef BAMSTATUS_OVERREPRESENT_H
 #define BAMSTATUS_OVERREPRESENT_H

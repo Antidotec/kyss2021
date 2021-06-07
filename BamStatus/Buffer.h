@@ -1,6 +1,4 @@
-//
-// Created by 赵展 on 2021/2/22.
-//
+
 #ifndef BAM_BUFFER_H
 #define BAM_BUFFER_H
 #include <mutex>

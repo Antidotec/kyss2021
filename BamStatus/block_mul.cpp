@@ -1,6 +1,4 @@
-//
-// Created by 赵展 on 2021/3/10.
-//
+
 #include <htslib/sam.h>
 #include <htslib/bgzf.h>
 #include <htslib/hfile.h>

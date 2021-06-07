@@ -1,6 +1,3 @@
-//
-// Created by 赵展 on 2021/3/24.
-//
 
 
 #include "BamStatus.h"

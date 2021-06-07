@@ -1,6 +1,4 @@
-//
-// Created by 赵展 on 2021/4/7.
-//
+
 
 #ifndef BAMSTATUS_DUPLICATE_H
 #define BAMSTATUS_DUPLICATE_H

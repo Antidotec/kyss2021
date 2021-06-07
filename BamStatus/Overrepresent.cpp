@@ -1,6 +1,4 @@
-//
-// Created by 赵展 on 2021/4/12.
-//
+
 
 #include "Overrepresent.h"
 Overrepresent::Overrepresent(int Total,double Center){

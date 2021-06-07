@@ -1,5 +1,3 @@
-////
-// Created by 赵展 on 2021/3/10.
 
 
 #include "BamBlock.h"

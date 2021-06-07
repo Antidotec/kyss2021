@@ -1,6 +1,4 @@
-//
-// Created by 赵展 on 2021/3/10.
-//
+
 
 #ifndef BAM_BAMBLOCK_H
 #define BAM_BAMBLOCK_H

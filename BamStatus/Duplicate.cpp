@@ -1,6 +1,3 @@
-//
-// Created by 赵展 on 2021/4/7.
-//
 
 #include "Duplicate.h"
 Duplicate::Duplicate() {
